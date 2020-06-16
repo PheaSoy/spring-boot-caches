@@ -1,0 +1,11 @@
+server:
+  port: 8081
+message: Hello from  Spring Boot
+fruits:
+  - Apple
+  - Orange
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
