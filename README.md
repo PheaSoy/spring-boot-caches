@@ -6,8 +6,8 @@
 ```shell script
 curl http://localhost:8081/books/snb-1
 ```
-* The first time you will this response slow and taking time more than 2 seconds.
-* Then you can try again it should be fast because 
+* The first time, you will the application taking around 2 seconds and slow respons back to the client.
+* Then you can try again it should be fast because we are using `@Cacheable("books")`
 
 ```java
     @Transactional(readOnly = true,timeout = 20)
